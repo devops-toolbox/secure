@@ -8,10 +8,10 @@ secure: Secure
 Ansible galaxy:
 ---------------
 
-[https://galaxy.ansible.com/devops-toolbox.secure](https://galaxy.ansible.com/devops-toolbox.secure)
+[https://galaxy.ansible.com/devopstoolbox.secure](https://galaxy.ansible.com/devopstoolbox.secure)
 
 ```bash
-ansible-galaxy install devops-toolbox.secure
+ansible-galaxy install devopstoolbox.secure
 ```
 
 Requirements
@@ -60,7 +60,7 @@ Example Playbook
   tasks:
     - name: secure is configured
       import_role:
-        name: devops-toolbox.secure
+        name: devopstoolbox.secure
       vars:
         secure_packages_state: present
         secure_remove_packages: true
@@ -89,4 +89,4 @@ MIT
 Author Information
 ------------------
 
-- [Mihai Criveti](https://www.linkedin.com/in/devops-toolbox.)
+- [Mihai Criveti](https://www.linkedin.com/in/devopstoolbox.)
