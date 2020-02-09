@@ -1,0 +1,10 @@
+---
+# Template configuration files for secure
+
+- name: template is copied
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  become: true
+  loop: "{{ secure_templates_copy }}"
+  when: secure_copy_templates

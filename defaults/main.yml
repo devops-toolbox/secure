@@ -1,0 +1,19 @@
+---
+# defaults file for secure
+
+secure_packages_state: present
+secure_remove_packages: true
+secure_enable_service: true
+secure_enable_selinux: true
+secure_copy_templates: true
+secure_firewall_configure: true
+secure_firewall_rules:
+  - service: ssh
+  - port: 3389
+secure_users:
+  - user: devops
+    group: docker
+secure_selinux_booleans:
+  - name: ftp_home_dir
+    state: true
+    persistent: true
